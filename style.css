@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-heading: 'Staatliches', cursive;
+  --ff-text: 'Palanquin';
+
+  --bg-primary: hsla(233, 100%, 97%, 1);
+  --bg-secondary: hsla(218, 17%, 62%, 1);
+  --bg-three: hsla(275, 18%, 79%, 1);
+
+
+  
+  --fc-one: hsla(0, 0%, 100%, 1);
+  --fc-two: hsla(274, 84%, 12%, 1);
+  --fc-three: hsla(232, 17%, 35%, 1);
+
+  font-size: 62.5%;
+  --fs-header: 4.0rem;
+  --fs-p: 2.0rem;
+  --fs-main: 2.0rem;
+}
+
+.page {
+  background-color: var(--bg-primary);
+  max-width: 38.4rem;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  font-family: var(--ff-heading);
+  color: var(--fc-one);
+
+  background-color: var(--bg-secondary); 
+
+  text-align: center;
+}
+
+header img {
+  width: 50%;
+  margin: 3.2rem;
+}
+
+header h1 {
+  background-color: var(--bg-three);
+  font-size: var(--fs-header);
+  letter-spacing: 0.05em;
+  line-height: 3.4rem;
+}
+
+main {
+  background-color: var(--bg-primary);
+
+  font-family: var(--ff-heading);
+  font-size: var(--fs-main);
+  letter-spacing: 0.05em;
+  color: var(--fc-three);
+  line-height: 3.4rem;
+}
+
+div p {
+  font-family: var(--ff-text);
+  font-weight: 400;
+  font-size: var(--fs-p);
+
+  color: var(--fc-two);
+  line-height: 1.5rem;
+  margin-top: 1.4rem;
+
+  text-align: center;
+
+  margin-bottom: 6.3rem;
+}
+
+.card {
+  position: relative;
+  padding: 3.2rem;
+}
+
+.card img {
+  width: 32rem;
+  object-fit: cover;
+}
+.card h2 {
+  position: absolute;
+  top: 5rem;
+  right: 3.8rem;
+
+  border-radius: 2rem;
+  background: #FEEAFA;
+
+  padding: 0 2.3rem;
+  height: 3.5rem;
+  text-align: center;
+}
+
+header {
+  animation: topleft 700ms;
+}
+
+main {
+  animation: bottomrigth 700ms;
+}
+
+@keyframes topleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bottomrigth {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
